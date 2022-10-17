@@ -1,0 +1,30 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "head head head"
+    "nav nav nav"
+    "article article ads"
+    "footer footer footer";
+    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: 1fr auto 10fr 1fr;
+}
+.head{
+    grid-area: head;
+    background-color: aqua;
+}
+.nav{
+    grid-area: nav;
+    background-color: blue;
+}
+.article{
+    grid-area: article;
+    background-color: aquamarine;
+}
+.ads{
+    grid-area: ads;
+    background-color: blueviolet;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(100, 196, 196);
+}
