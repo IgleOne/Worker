@@ -8,18 +8,20 @@ body{
     grid-template-columns: 4fr 4fr 2fr;
     grid-template-rows: 1fr auto 10fr 1fr;
     height: 100vh;
+    margin: 0; padding: 0;
 }
 .head{
     grid-area: head;
     background-color: aqua;
 }
-
+/* Панель навигации */
 .nav{grid-area: nav; margin-left: 15%; padding: 0 0 0 5px;}
 .nav ul{margin: 0; padding: 0;}
 .nav li{background: orange; width: 100px; height: auto; text-shadow: 1px 1px 7px black; font-size: large; text-align: center; margin: 0 -4px 0 0;}
 .nav ul li {display: inline-block; position: relative;}
 .nav li ul {display: none; position: absolute;}
 .nav ul li:hover>ul {display: block; margin: 0 4px 0 0; padding: 0;}
+.nav a{text-decoration: none; color: black;}
 
 .article{
     grid-area: article;
